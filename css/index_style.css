@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* body {
+    height: 5000px;
+} */
+
+/* =============== Header Section =============== */
+
 header {
     height: 90vh;
     background: linear-gradient(rgba(214, 46, 51 , 0.6), rgba(214, 46, 51 , 0.6)), url(../Images/events-heavenly-header.jpg);
@@ -19,7 +25,12 @@ header h1 {
 
 .hamburger-menu-position {
     top: 55%;
-    left: 1%;
+    left: 17%;
+    z-index: 54;
+}
+
+.hamburger-menu-position:hover {
+    cursor: pointer;
 }
 
 .hamburger-menu {
@@ -53,4 +64,42 @@ header h1 {
     font-size: 1.5rem;
     font-family: helvetica, Arial, sans-serif;
     padding-left: 7px;
+}
+
+/* =============== Side Menu =============== */
+#side-menu {
+    height: 100vh;
+    width: 250px;
+    background-color: #414658;
+    position: fixed;
+    z-index: 54;
+    top: 0;
+    left: 0;
+}
+
+#side-menu ul {
+    line-height: 4;
+    font-size: 25px;
+    padding-top: 0 !important;
+    /* width: 150px; */
+}
+
+#side-menu ul li {
+    transition: all 0.3s;
+}
+
+#side-menu ul li:hover, 
+#side-menu i:hover {
+    cursor: pointer;
+    color: rgba(214, 46, 51 , 0.4);
+}
+
+#side-menu i {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+#side-menu .times-sign-wrapper {
+    padding-left: 170px;   
+    padding-top: 60px;
 }
