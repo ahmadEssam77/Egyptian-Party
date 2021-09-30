@@ -23,10 +23,11 @@ header h1 {
     font-size: 4rem;
 }
 
-.hamburger-menu-position {
-    top: 55%;
-    left: 17%;
-    z-index: 54;
+.container-of-sideMenu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    align-items: center;
 }
 
 .hamburger-menu-position:hover {
@@ -56,7 +57,7 @@ header h1 {
     height: 3px;
     background-color: #fff;
     position: absolute;
-    bottom: 620%;
+    bottom: 630%;
     left: 0;
 }
 
@@ -71,24 +72,22 @@ header h1 {
     height: 100vh;
     width: 250px;
     background-color: #414658;
-    position: fixed;
-    z-index: 54;
-    top: 0;
-    left: 0;
 }
 
 #side-menu ul {
-    line-height: 4;
+    line-height: 2.5;
     font-size: 25px;
     padding-top: 0 !important;
-    /* width: 150px; */
+    padding-left: 4rem;
 }
 
-#side-menu ul li {
+#side-menu ul li a {
     transition: all 0.3s;
+    text-decoration: none;
+    color: #fff;
 }
 
-#side-menu ul li:hover, 
+#side-menu ul li a:hover, 
 #side-menu i:hover {
     cursor: pointer;
     color: rgba(214, 46, 51 , 0.4);
