@@ -9,4 +9,10 @@ $(".times-sign-wrapper").click(function() {
     $(".container-of-sideMenu").animate({left : `-${sideMenuWidth}px`}, 1000);
 });
 
+// ================ Accordion Function ================
+$('#accordion div').click(function() {
+    $("#accordion p").not($(this).next()).slideUp(500);
+    $(this).next().slideToggle(1000);
+});
+
 

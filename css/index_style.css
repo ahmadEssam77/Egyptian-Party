@@ -102,3 +102,35 @@ header h1 {
     padding-left: 170px;   
     padding-top: 60px;
 }
+
+/* ================================================================================== */
+/* ================ Accordion ================ */
+#accordion div {
+    background-color: maroon;
+    width: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+
+#accordion p {
+    width: 50%;
+    margin: auto;
+    border: 1px solid maroon;
+    display: none;
+}
+
+
+
+/* *================ Media Query ================ */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #accordion div,
+    #accordion p {
+        width: 75%;
+        margin: auto;
+    }
+}
+
