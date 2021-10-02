@@ -12,7 +12,7 @@ $(".times-sign-wrapper").click(function() {
 // ================ Accordion Function ================
 $('#accordion div').click(function() {
     $("#accordion p").not($(this).next()).slideUp(500);
-    $(this).next().slideToggle(1000);
+    $(this).next().slideToggle(500);
 });
 
 
