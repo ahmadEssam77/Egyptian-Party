@@ -15,4 +15,22 @@ $('#accordion div').click(function() {
     $(this).next().slideToggle(500);
 });
 
+// ================ CountDown Function ================
 
+
+// ================ Text Area Function ================
+let max = 100;
+let myCounter = document.querySelector('.myCounter');
+myCounter.innerHTML = max;
+let tArea = document.getElementById('tArea');
+
+tArea.addEventListener('keyup', function() {
+    let areaLength = tArea.value.length;
+    let counter = max - areaLength;
+    if (counter <= 0) {
+        myCounter.innerHTML = "Your available character is finished";
+    }
+    else {
+        myCounter.innerHTML = counter;
+    }
+});
